@@ -1,0 +1,95 @@
+{% extends "layouts/layout01.html" %}
+
+{% block content %}
+
+
+    <div class="container" id="courses">
+      <h1 class="text-center myheading1">Courses</h1>
+	  
+	  <div class="container text-center">
+	    <img src="{{url_for('static', filename='images/c4k_carousel_04-600x338.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Courses" />
+
+	  </div>
+      
+		<p>Yo-ho-ho brigantine lateen sail belaying pin fore pillage belay jury mast spirits. Haul wind ye maroon black jack gibbet Arr list square-rigged yard. Tack mizzenmast crow's nest Spanish Main driver topgallant mizzen gangway Sail ho.</p>
+
+	  
+		<div class="container mt-3">
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs">
+			<li class="nav-item">
+			  <a class="nav-link active" data-toggle="tab" href="#menu1">Robotics</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" data-toggle="tab" href="#menu2">Web Dev</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" data-toggle="tab" href="#menu3">Python</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" data-toggle="tab" href="#menu4">Bots</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" data-toggle="tab" href="#menu5">Games</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" data-toggle="tab" href="#menu6">Mobile</a>
+			</li>
+		  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+				<div id="menu1" class="container tab-pane active"><br>
+				  <h3 class="text-center coursestab">Sphero Robotics</h3>
+				  <img src="{{url_for('static', filename='images/courses_sphero01.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Sphero Robotics" title="Sphero Robotics" />
+				  
+				  <p class="text-primary">Test your 'programming mettle' in our <strong>Sphero Robotics Hackathon!</strong> Learn to write programs to guide a Sphero robotic ball through a complex maze on demand.  There are prizes for the most creative runs, fastest completion times, and most efficient programs, plus extra 'style points'. </p>
+				  <p class="text-primary">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. StrSed ut perspiciatis unde.</p>
+				</div>
+
+				<div id="menu2" class="container tab-pane fade"><br>
+				  <h3 class="coursestab text-center">Modern Web Development</h3>
+				  <img src="{{url_for('static', filename='images/courses_webdev02.png')}}" class="img-fluid rounded mx-auto d-block" alt="Modern Web Development" title="Modern Web Development" />
+				  <p class="text-info">Learn to build beautiful and responsive web sites.  Learn HTML5, CSS3, BootStrap 4, JavaScript, and React.js on the front-end. Learn Python Flask, PHP, and Node.js for back-end web development.  Deploy your apps to Amazon AWS free cloud platform, and master GIT code repository techniques.  Along the way, you will learn SQL databases, and modern web development best practices.  YOu will end with 3 web sites for our portfolio.</p>
+				  
+				</div>
+
+				<div id="menu3" class="container tab-pane fade"><br>
+				  <h3 class="coursestab text-center">Python Programming</h3>
+				  <img src="{{url_for('static', filename='images/courses_python02.png')}}" class="img-fluid rounded mx-auto d-block" alt="Python Programming" title="Python Programming" />
+				  <p class="text-success">Hardtack maroon spirits chase guns shrouds chase interloper chantey cackle fruit. Trysail landlubber or just lubber Barbary Coast pirate jack hang the jib wench plunder.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				  <p class="text-success">Round lugsail jolly boat weigh anchor swab chase hornswaggle bowsprit. Fore chantey bucko loot gangplank topgallant yawl gunwalls pink. Piracy hail-shot fathom deadlights trysail American Main matey gaff grapple.</p>
+				</div>
+
+				<div id="menu4" class="container tab-pane fade"><br>
+				  <h3 class="coursestab text-center">Battle Bots</h3>
+				  <img src="{{url_for('static', filename='images/courses_battlebots01.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Battle Bots" title="Battle Bots" />
+				  <p class="text-primary">StrSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				  <p class="text-primary">Wench heave down fire ship bilge rat belaying pin Sink me yardarm. Stern Jack Tar landlubber or just lubber squiffy Chain Shot gangway pressgang.</p>
+				</div>
+
+				<div id="menu5" class="container tab-pane fade"><br>
+				  <h3 class="coursestab text-center">Game Development</h3>
+				  <img src="{{url_for('static', filename='images/courses_gamedev01.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Game Development" title="Game Development" />
+				  <p class="text-info">Like playing computer games? Learn how to build your own coloful and fun action games, and impress your friends. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				  <p class="text-info">Tack scuppers long clothes parley sheet crack Jennys tea cup Jack Ketch. Barque Spanish Main Sea Legs Admiral of the Black main sheet Letter of Marque Sail ho.</p>
+				</div>
+
+				<div id="menu6" class="container tab-pane fade"><br>
+				  <h3 class="coursestab text-center">Mobile App Development</h3>
+				  <img src="{{url_for('static', filename='images/courses_mobile01.png')}}" class="img-fluid rounded mx-auto d-block" alt="Mobile App Development" title="Mobile App Development" />
+				  <p class="text-success">Learn to build your own smart phones apps for iOS and Android, and show them to your friends nd family.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				  <p class="text-success">Tack scuppers long clothes parley sheet crack Jennys tea cup Jack Ketch. Barque Spanish Main Sea Legs Admiral of the Black main sheet Letter of Marque Sail ho.</p>
+				  <p class="text-success">Wench heave down fire ship bilge rat belaying pin Sink me yardarm. Stern Jack Tar landlubber or just lubber squiffy Chain Shot gangway pressgang.</p>
+				</div>
+				
+			  </div>
+		</div>	 	  
+		<br />
+      <p>Sail ho trysail rum pinnace tender ho crow's nest Jolly Roger yawl. Hardtack maroon spirits chase guns shrouds chase interloper chantey cackle fruit. Trysail landlubber or just lubber Barbary Coast pirate jack hang the jib wench plunder sheet.</p>
+	  <img src="{{url_for('static', filename='images/c4k_coders03.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Courses" />
+      <p>Cat o'nine tails Pirate Round lugsail jolly boat weigh anchor swab chase hornswaggle bowsprit. Fore chantey bucko loot gangplank topgallant yawl gunwalls pink. Piracy hail-shot fathom deadlights trysail American Main matey gaff grapple.</p>
+    </div>	
+
+	
+{% endblock %}

@@ -1,0 +1,22 @@
+	<div class="google_map" id="map">
+	<!--- Add Google Maps ~ for central Mississauga ON near City Hall -->
+	  <div id="googleMap" style="height:400px;" class="map_location"></div>  
+	  <script> 
+	  function myMap() {  
+		myCenter=new google.maps.LatLng(43.586819, -79.6440384); 
+		var mapOptions= {
+		  center:myCenter, 
+		  zoom:14, scrollwheel: false, draggable: true, 
+		  mapTypeId:google.maps.MapTypeId.ROADMAP 
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+		var marker = new google.maps.Marker({
+		  position: myCenter, 
+		});
+		marker.setMap(map);
+	  }
+	  </script>
+	  
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDao5q0i8BCKJPZ2tBqWNb5zPwg4UNxq1k&callback=myMap"></script> 
+	</div>
+

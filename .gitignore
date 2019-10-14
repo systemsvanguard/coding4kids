@@ -3,6 +3,24 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#-----------------------------------------  
+
+.env
+config.py 
+settings.py 
+venv
+devenv
+env01
+not4Deploy
+__pycache__
+*.pyc
+staticfiles
+devenv/*
+not4Deploy/*
+db.sqlite3
+
+#-----------------------------------------  
+
 # C extensions
 *.so
 

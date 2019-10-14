@@ -1,0 +1,23 @@
+{% extends "layouts/layout01.html" %}
+
+{% block content %}
+
+    <div class="container" id="testimonials">
+      <h1 class="text-center myheading1">Testimonials</h1>
+
+	  <img src="{{url_for('static', filename='images/c4k_carousel_01-300x338.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Testimonials" title="Testimonials" />
+	  
+
+      
+      <p>Aft yard American Main parley lad barque hearties. Parley pressgang run a shot across the bow pinnace trysail gangway main sheet. Crimp parley parrel black jack crack Jennys tea cup knave rutters.</p>
+      <p>Wench heave down fire ship bilge rat belaying pin Sink me yardarm. Stern Jack Tar landlubber or just lubber squiffy Chain Shot gangway pressgang. Fire in the hole marooned aye draft parley measured fer yer chains Gold Road.</p>
+      <p>Heave to Barbary Coast crimp snow quarterdeck man-of-war spyglass. Snow cable splice the main brace yardarm mizzen topsail bounty. Holystone lugger Sink me rutters tack bilged on her anchor deadlights.</p>
+    </div>
+	
+	{% include 'partials/testimonialquotes.html' %}
+	
+	
+	<br />
+
+	
+{% endblock %}

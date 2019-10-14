@@ -1,0 +1,102 @@
+{% extends "layouts/layout01.html" %}
+
+{% block content %}
+
+    <div class="container" id="contact">
+      <h1 class="text-center myheading1">Contact Us</h1>
+	  <div class="container text-center">		
+		<img src="{{url_for('static', filename='images/c4k_coding_01_800x472.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Curiosity at Work" title="Curiosity at Work" />
+	  </div>
+      
+      <p>Bilged on her anchor spirits tender wench booty rigging pressgang warp capstan. Doubloon chantey gangway league Admiral of the Black Gold Road Privateer Buccaneer killick. Rum swing the lead gangway lee gunwalls chase guns ye gabion cog.</p>
+      <p>Gabion ballast draft sheet stern spyglass weigh anchor main sheet grog. Spirits man-of-war gally schooner Cat o'nine tails sheet Gold Road main sheet bilged on her anchor. Prow ho Corsair square-rigged Arr grog pillage bilge rat red ensign.</p>
+	  
+		<div class="row">
+		  <div class="col">
+			<img src="{{url_for('static', filename='images/c4k_coders06.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Curiosity at Work" title="Curiosity at Work" />
+		  </div>
+		  <div class="col">
+			<img src="{{url_for('static', filename='images/c4k_stem02.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Joy in Learning" title="Joy in Learning" />
+		  </div>
+		</div>
+	  
+      <p>Coxswain fluke Jolly Roger gangway strike colors sutler mizzen bowsprit stern. Lateen sail grapple boom tackle loot Sea Legs gangplank chantey sloop. Blimey hornswaggle parley mutiny gunwalls crow's nest plunder blow the man down fire ship.</p>
+	  <br />
+
+
+<h1 class="page-header text-center">Contact Us</h1>
+<div class="row">  
+  <div class="col-6 col-sm-4">
+  
+	  <i class="fas fa-map-marker-alt fa-sm" style="color:#00008b;"></i> Toronto, ON Canada<br />
+	  <i class="fas fa-phone fa-sm" style="color:#00008b;"></i> Phone: <strong>416-312-xxx3</strong><br />
+	  <i class="fas fa-envelope-open fa-sm" style="color:#00008b;"> </i> Email:  <strong><em>ryan@RyanHunter.org</em> </strong><br />
+	  <i class="fas fa-globe-americas fa-sm" style="color:#00008b;"></i> Site :  <a href="http://ryanhunter.org/">www.RyanHunter.org</a><br />
+  
+    <img src="{{url_for('static', filename='images/c4k_coders01b.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Contact Us" />
+  </div>
+  
+  <div class="col-6 col-sm-8">
+
+  
+  	<!---- Contact Form --->
+	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 col-md-offset-3">
+				<form class="form-horizontal" role="form" method="post" action="#">
+					<div class="form-group">
+						<span><i class="fas fa-user"></i><label for="name" class="col-sm-2 control-label"> Name</label></span>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">						
+						</div>
+					</div>
+					<div class="form-group">
+						<span><i class="fas fa-envelope"></i><label for="email" class="col-sm-2 control-label"> Email</label></span>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+						</div>
+					</div>
+					
+					
+					<div class="form-group">
+						<span><label for="human" class="col-sm-2 control-label"><strong>7+11=?</strong> </label></span>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">			
+						</div>
+					</div>
+					<div class="form-group">
+						<span><i class="fas fa-edit"></i><label for="message" class="col-sm-2 control-label"> Message</label></span>
+						<div class="col-sm-10">
+							<textarea class="form-control" rows="3" name="message"></textarea>
+							
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<button id="submit" name="submit" type="submit" class="btn btn-primary"><i class="fas fa-mail-bulk"> Contact Us</i></button>							
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+						</div>
+					</div>
+				</form> 
+			</div>
+		</div>
+	</div>   
+	<!---/ Contact Form --->
+  
+  </div>
+</div>
+
+
+
+	  <br />
+    </div>
+	
+	{% include 'partials/map.html' %}
+	
+
+	
+{% endblock %}

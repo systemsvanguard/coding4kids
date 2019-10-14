@@ -1,0 +1,26 @@
+{% extends "layouts/layout01.html" %}
+
+{% block content %}
+
+    <div class="container" id="quizresults">
+      <h1 class="text-center myheading1">Quiz Results</h1>
+
+	  <img src="{{url_for('static', filename='images/c4k_coding_05_600x400.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Fun & Games" title="Fun & Games" />
+	  
+	  <h1 class="text-center text-primary">{{ your_score }} </h1> 
+
+		<a type="button" class="btn btn-primary" href="{{ url_for('quizfun') }}"><i class="fas fa-redo"></i> Play Again</a>
+	  
+
+      
+
+      <p>Wench heave down fire ship bilge rat belaying pin Sink me yardarm. Stern Jack Tar landlubber or just lubber squiffy Chain Shot gangway pressgang. Fire in the hole marooned aye draft parley measured fer yer chains Gold Road.</p>
+      <p>Heave to Barbary Coast crimp snow quarterdeck man-of-war spyglass. Snow cable splice the main brace yardarm mizzen topsail bounty. Holystone lugger Sink me rutters tack bilged on her anchor deadlights.</p>
+	  
+	  <a type="button" class="btn btn-primary" href="{{ url_for('home') }}"><i class="fas fa-home"></i> Return Home</a>
+    </div>
+	
+	<br />
+
+	
+{% endblock %}

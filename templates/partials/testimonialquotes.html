@@ -1,0 +1,167 @@
+<div class="testimonialquotes" id="testimonialquotes">
+	
+	<!--- html -->
+		<div class="slideshow-container">
+
+			<div class="mySlides">
+			  <q>I absolutely LOVE Coding4Kids! Professional teachers, fun programs, and the kids are actually learning, and asking me for more classes.</q>
+			  <p class="author">- Connor Tennington ~ Parent/ Architect </p>
+			</div>
+
+			<div class="mySlides">
+			  <q>I was concerend about the cost initially ... but they have flexible plans AND they are very easy and reasonable to talk with. Catherine is learning a LOT!</q>
+			  <p class="author">- Ariel Karen Josephs ~ Parent/ Police Officer</p>
+			</div>
+
+			<div class="mySlides">
+			  <q>Smart teachers, good processes, fantastic feedback, and a great curriculum.  But most importantly ... they listen to us the parents.  Fabulous service.  2 thumbs us!</q>
+			  <p class="author">- Fabio Enrique ~ Volunteer/ Parent/ Programmer</p>
+			</div>
+			
+			<div class="mySlides">
+			  <q>A God-send answer to my prayers.  I've always said 'the Devil finds use for idle hands!' Andre is no longer idle and he's loving it.  A big THANK YOU! to Coding4Kids.</q>
+			  <p class="author">- Marlon Samuels ~ GrandParent/ Attorney</p>
+			</div>
+			
+			<div class="mySlides">
+			  <q>I can see my kid learning AND making friends.  She's also actually enjoying the homeworkl! I want more of this for her.</q>
+			  <p class="author">- Mirriam Silas ~ Gaurdian/ Social Worker</p>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+
+		<div class="dot-container">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		</div>
+	<!--/ html -->	
+	
+	
+	
+	
+	<!--- styling -->
+	<style>
+	* {box-sizing: border-box}
+	body {font-family: Verdana, sans-serif; margin:0}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  position: relative;
+	  background: #ffffe0;
+	  color: #00008b;
+	  
+	}
+
+	/* Slides */
+	.mySlides {
+	  display: none;
+	  padding: 30px 20px;
+	  text-align: center;
+	}
+
+	/* Next & previous buttons  */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -30px;
+	  padding: 16px;
+	  color: #008b00;
+	  font-weight: bold;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  position: absolute;
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	  color: white;
+	}
+
+	/* The dot/bullet/indicator container */
+	.dot-container {
+		text-align: center;
+		padding: 10px;
+		background: #ddd;  
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	/* Add a background color to the active dot/circle */
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Add an italic font style to all quotes */
+	q {font-style: italic;}
+
+	/* Add a green color to the author */
+	.author {color: #008b00;}
+	</style>
+	<!--/ styling -->
+
+	
+
+	
+	
+	
+	<!--- script -->
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+	<!--/ script -->
+	
+	
+
+</div>
+

@@ -1,0 +1,151 @@
+{% extends "layouts/layout01.html" %}
+
+{% block content %}
+
+    <div class="container" id="volunteers">
+      <h1 class="text-center myheading1">Volunteers</h1>
+	  <!--
+	  <div class="container text-center">
+	    <img src="https://picsum.photos/id/350/150" class="img-fluid rounded mx-auto d-block" alt="Testimonials" />
+	  </div>
+	  -->
+	  <img src="{{url_for('static', filename='images/c4k_coding_03_600x300.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Volunteer" title="Volunteer" />
+	  
+
+      
+      <p>We strive to keep a 4:1 student to coach ratio to ensure the children gain the most interaction and feedback in the courses.  We provide positive role models for our students.  In addition to expert hired staff, we actively seek dedicated volunteers with a love for seeing children learn.  Our coaches find it a very rewarding experience in seeing the light come on in children's eyes as they suddenly grasp a complex topic.  Or maybe its just seeing kids moving towards their potential.  If this sounds like you, we would love to hear from you.  Below are current volunteer vacancies. </p>
+	  
+	  <h3 class="text-center myheading3">Current Volunteer Vacancies</h3>
+    <!--- Accordion -->
+	<div class="myaccordion container">
+	  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+		  <div class="panel-heading" role="tab" id="headingOne">
+			<h4 class="panel-title">
+			<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			  Instructor/ Facilitator
+			</a>
+		  </h4>
+		  </div>
+		  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			<div class="panel-body">
+			  <p>Aye long clothes measured fer yer chains bilge water Blimey spanker. Sheet splice the main brace transom keelhaul six pounders pirate. Yard driver strike colors Nelsons folly aft transom.</p>
+			  <p>Pinnace smartly interloper gibbet walk the plank scallywag. Boatswain landlubber or just lubber hearties sutler scallywag pinnace. Rigging bilged on her anchor dead men tell no tales jury mast Corsair jib.</p>
+			  <p>Admiral of the Black Yellow Jack avast square-rigged bring a spring upon her cable handsomely. Sink me topgallant prow main sheet tackle chase. Admiral of the Black bowsprit swing the lead reef sails holystone Privateer. 
+			  </p><br />
+			</div>
+		  </div>
+		</div>
+		<div class="panel panel-default">
+		  <div class="panel-heading" role="tab" id="headingTwo">
+			<h4 class="panel-title">
+			<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			  Coach/ Teaching Assistant
+			</a>
+		  </h4>
+		  </div>
+		  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			<div class="panel-body">
+			  <p>Spike fore draught matey ballast jib. Buccaneer grapple six pounders bilge water booty come about. Rum avast line long boat spanker pillage.</p>
+			  <p>Main sheet chandler chantey league Letter of Marque chase. Parrel lass marooned sloop Brethren of the Coast clap of thunder. Transom rope's end gaff barque nipper gangway.</p>
+			  <p>Furl long clothes jib to go on account interloper hardtack. Crimp yo-ho-ho yardarm handsomely walk the plank wherry. Doubloon rigging reef sails sheet jury mast hang the jib.
+			  </p><br />
+			</div>
+		  </div>
+		</div>
+		<div class="panel panel-default">
+		  <div class="panel-heading" role="tab" id="headingThree">
+			<h4 class="panel-title">
+			<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			  Community Outreach Co-ordinator
+			</a>
+		  </h4>
+		  </div>
+		  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			<div class="panel-body">
+			  <p>Execution dock topsail dance the hempen jig aft keelhaul driver. Scallywag poop deck Plate Fleet pressgang lateen sail hearties. Scallywag blow the man down rope's end capstan warp chantey</p>
+			  <p>Boom draught barque chase parrel tender. Square-rigged wherry main sheet parrel Jolly Roger sloop. Barbary Coast run a rig poop deck Nelsons folly aye chase guns.</p>
+			  <p>Dance the hempen jig Sink me black jack squiffy fore reef sails. Rope's end sloop topmast coxswain bring a spring upon her cable barque. Gold Road lee crow's nest bring a spring upon her cable booty killick.</p><br />
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<br />
+
+	<!--/ Accordion -->
+	  
+	  
+	  
+	  
+      <p>Wench heave down fire ship bilge rat belaying pin Sink me yardarm. Stern Jack Tar landlubber or just lubber squiffy Chain Shot gangway pressgang. Fire in the hole marooned aye draft parley measured fer yer chains Gold Road.</p>
+      <p>Heave to Barbary Coast crimp snow quarterdeck man-of-war spyglass. Snow cable splice the main brace yardarm mizzen topsail bounty. Holystone lugger Sink me rutters tack bilged on her anchor deadlights.</p>
+	  <p>Aft yard American Main parley lad barque hearties. Parley pressgang run a shot across the bow pinnace trysail gangway main sheet. Crimp parley parrel black jack crack Jennys tea cup knave rutters.</p>
+    </div>
+	
+	<br />
+	
+	
+	<style>
+		.myaccordion {
+		  color: #6a6c6f;
+		  background-color: #f1f3f6;
+		  margin-top:30px;
+		}
+
+		.myaccordion.container {
+		  max-width: 960px;
+		}
+
+		/* */
+
+		.panel-default>.panel-heading {
+		  color: #333;
+		  background-color: #fff;
+		  border-color: #e4e5e7;
+		  padding: 0;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		.panel-default>.panel-heading a {
+		  display: block;
+		  padding: 10px 15px;
+		}
+
+		.panel-default>.panel-heading a:after {
+		  content: "";
+		  position: relative;
+		  top: 1px;
+		  display: inline-block;
+		  font-family: 'Glyphicons Halflings';
+		  font-style: normal;
+		  font-weight: 400;
+		  line-height: 1;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  float: right;
+		  transition: transform .25s linear;
+		  -webkit-transition: -webkit-transform .25s linear;
+		}
+
+		.panel-default>.panel-heading a[aria-expanded="true"] {
+		  background-color: #eee;
+		}
+
+		.panel-default>.panel-heading a[aria-expanded="true"]:after {
+		  content: "\2212";
+		  -webkit-transform: rotate(180deg);
+		  transform: rotate(180deg);
+		}
+
+		.panel-default>.panel-heading a[aria-expanded="false"]:after {
+		  content: "\002b";
+		  -webkit-transform: rotate(90deg);
+		  transform: rotate(90deg);
+	</style>	
+
+	
+{% endblock %}

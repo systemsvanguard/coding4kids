@@ -1,0 +1,182 @@
+{% extends "layouts/layout01.html" %}
+
+{% block content %}
+
+    <div class="container" id="testimonials">
+      <h1 class="text-center myheading1">Fun & Games</h1>
+
+	  <img src="{{url_for('static', filename='images/c4k_coding_05_600x400.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Fun & Games" title="Fun & Games" />	  
+	  <br />
+	  <p>We're all about learning while having fun! We call it 'edu-tainment'.  While you're here, why not have some fun <strong>and</strong> learn a few things? Below is a quiz and a few web games.  <strong>Have Fun!!</strong></p>
+
+	  
+	  
+	  
+	<!-- Fun Quiz -->
+	<h3 class="text-center text-primary">World Capital Cities!!</h3> 
+	<p>Please ensure to fill in all quiz questions!</p>
+	<form action='/quiz_results/' method='POST'>
+		
+		
+		
+		<ol>
+			{% for i in q %}
+				<li>The capital city of <strong>{{i}}</strong> is ___?</li>
+				{% for j in o[i] %}					
+					<div class="form-check-inline">  <label class="form-check-label" for="radio2"> <input type="radio" class="form-check-input" id='{{i}}' name='{{i}}' value='{{j}}' required >'{{j}}'</label>  </div>
+					
+				{% endfor %}
+			{% endfor %}
+		</ol>
+
+		<button  type="submit" value="submit" name="submit" id="submit" class="btn btn-primary" ><i class="fas fa-question"></i> Check Answers</button>
+	</form>
+	<br />
+	
+	
+	
+
+
+
+      <br />
+	  <p>Fire in the hole marooned aye draft parley measured fer yer chains Gold Road.</p>
+	  
+		  <!--- List of Games -->
+		  <div class="container-fluid">
+			<!-- Control the column width, and how they should appear on different devices -->
+			<div class="row">
+			  <div class="col-sm-4">
+				<!--- card -->
+				<div class="card" style="width:250px">
+					<a href="http://ryanhunter.org/portfolio/memorygame01.html">				  
+					  <img src="{{url_for('static', filename='images/fun/screen_memory_match_grid.png')}}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Memory Match # 1" title="Memory Match # 1" />				  
+					</a>
+					<div class="card-body">
+					  <h4 class="card-title">Memory Match #1</h4>
+					  <p class="card-text">Coded using the fantastic Sweet Alert CSS library, jQuery, CSS, HTML5, & a fontastic.me generated custom icons based on FontAwesome.</p>
+					  <a href="http://ryanhunter.org/portfolio/memorygame01.html" class="btn btn-primary">Play Game</a>
+					</div>
+				</div>
+				<!--/ card -->
+			  </div>
+			  
+			  <div class="col-sm-4">
+				<!--- card -->
+				<div class="card" style="width:250px">
+					<a href="http://ryanhunter.org/portfolio/wordsearch/wordsearch.html#wordsearch">				  
+					  <img src="{{url_for('static', filename='images/fun/screen_wordsearch.png')}}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Word Search" title="Word Search" />				  
+					</a>
+					<div class="card-body">
+					  <h4 class="card-title">Word Search</h4>
+					  <p class="card-text">Search for the most popular words of President Donald Trump. Coded using JavaScript, CSS, HTML, & Intel App Framework.</p>
+					  <a href="http://ryanhunter.org/portfolio/wordsearch/wordsearch.html#wordsearch" class="btn btn-primary">Play Game</a>
+					</div>
+				</div>
+				<!--/ card -->
+			  </div>
+			  
+			  <div class="col-sm-4">
+				<!--- card -->
+				<div class="card" style="width:250px">
+					<a href="http://ryanhunter.org/portfolio/popthebubbles.html">				  
+					  <img src="{{url_for('static', filename='images/fun/screen_pop_bubbles.png')}}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Pop The Bubbles" title="Pop The Bubbles" />				  
+					</a>
+					<div class="card-body">
+					  <h4 class="card-title">Pop The Bubbles</h4>
+					  <p class="card-text">Have fun popping the bubbles! See how many you can catch. Enjoy!</p>
+					  <a href="http://ryanhunter.org/portfolio/popthebubbles.html" class="btn btn-primary">Play Game</a>
+					</div>
+				</div>
+				<!--/ card -->
+			  </div>
+			</div>
+		  </div>
+		  <br>
+		  
+		  
+		  <div class="container-fluid">
+			<!-- Control the column width, and how they should appear on different devices -->
+			<div class="row">
+			  <div class="col-sm-4">
+				<!--- card -->
+				<div class="card" style="width:250px">
+					<a href="http://ryanhunter.org/portfolio/roundup/index.html">				  
+					  <img src="{{url_for('static', filename='images/fun/screen_monster_roundup.png')}}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Monster Roundup" title="Monster Roundup" />				  
+					</a>
+					<div class="card-body">
+					  <h4 class="card-title">Monster Roundup</h4>
+					  <p class="card-text">Catch the cute monsters to score points. Lose a point for each that dies. Made with JavaScript, CSS, graphics, & HTML5. Enjoy!</p>
+					  <a href="http://ryanhunter.org/portfolio/roundup/index.html" class="btn btn-primary">Play Game</a>
+					</div>
+				</div>
+				<!--/ card -->
+			  </div>
+			  
+			  <div class="col-sm-4">
+				<!--- card -->
+				<div class="card" style="width:250px">
+					<a href="http://ryanhunter.org/portfolio/memorygame04.html">				  
+					  <img src="{{url_for('static', filename='images/fun/screen_memory_match_3levels.png')}}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Memory Match # 2" title="Memory Match # 2" />				  
+					</a>
+					<div class="card-body">
+					  <h4 class="card-title">Memory Match # 2</h4>
+					  <p class="card-text">Build your memory. Utilizes Angular.js, Material Design, and Material icons</p>
+					  <a href="http://ryanhunter.org/portfolio/memorygame04.html" class="btn btn-primary">Play Game</a>
+					</div>
+				</div>
+				<!--/ card -->
+			  </div>
+			  
+			  
+			  <div class="col-sm-4">
+				<!--- card -->
+				<div class="card" style="width:250px">
+					<a href="http://ryanhunter.org/portfolio/madlibs.html">				  
+					  <img src="{{url_for('static', filename='images/fun/screen_madlibs_game.png')}}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Mad Libs" title="Mad Libs" />				  
+					</a>
+					<div class="card-body">
+					  <h4 class="card-title">Mad Libs</h4>
+					  <p class="card-text">A simple Mad Libs Game for your enjoyment! Built using HTML5, CSS3, Angular.js, & JavaScript.</p>
+					  <a href="http://ryanhunter.org/portfolio/madlibs.html" class="btn btn-primary">Play Game</a>
+					</div>
+				</div>
+				<!--/ card -->
+			  </div>	  
+			  
+			</div>
+		  </div>
+		  <br>
+		  
+		  
+		  
+		  <div class="container-fluid">
+			<!-- Control the column width, and how they should appear on different devices -->
+			<div class="row">
+			  <div class="col-sm-4">
+				<!--- card -->
+				<div class="card" style="width:250px">
+					<a href="http://ryanhunter.org/portfolio/additionfun.html">				  
+					  <img src="{{url_for('static', filename='images/fun/screen_addition_fun.png')}}" class="card-img-top img-fluid rounded mx-auto d-block" alt="Addition Fun" title="Addition Fun" />				  
+					</a>
+					<div class="card-body">
+					  <h4 class="card-title">Addition Fun</h4>
+					  <p class="card-text">Beat the timer. Built using jQuery, jQuery UI, Bootstrap 3, Fontastic icons, Google fonts, CSS, & HTML5.</p>
+					  <a href="http://ryanhunter.org/portfolio/additionfun.html" class="btn btn-primary">Play Game</a>
+					</div>
+				</div>
+				<!--/ card -->
+			  </div>
+			</div>
+		  </div>
+		  <br>
+		  <!--/ List of Games -->		  
+
+      <p>Heave to Barbary Coast crimp snow quarterdeck man-of-war spyglass. Snow cable splice the main brace yardarm mizzen topsail bounty. Holystone lugger Sink me rutters tack bilged on her anchor deadlights.</p>
+	  
+	  
+    </div>	
+	
+	<br />
+
+	
+{% endblock %}

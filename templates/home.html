@@ -1,0 +1,60 @@
+{% extends "layouts/layout01.html" %}
+
+{% block content %}
+
+    <div class="container" id="home">
+	  <h1 class="text-center myheading1">{{ title }} </h1>
+	  <h3 class="text-center text-primary">{{ subtitle }} </h3> 
+	  <p class="text-center">Teaching children computer programming, web development, robotics, and STEM in a fun way. Wind ye maroon black jack gibbet Arr list square-rigged yard. Tack mizzenmast crow's nest Spanish Main driver topgallant mizzen gangway Sail ho.</p>
+    </div>
+	
+	
+
+	<div id="c4k_carousel" class="carousel slide" data-ride="carousel">
+	  <ul class="carousel-indicators">
+		<li data-target="#c4k_carousel" data-slide-to="0" class="active"></li>
+		<li data-target="#c4k_carousel" data-slide-to="1"></li>
+		<li data-target="#c4k_carousel" data-slide-to="2"></li>
+		<li data-target="#c4k_carousel" data-slide-to="3"></li>
+	  </ul>
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img src="{{url_for('static', filename='images/carousel/c4k_carousel_01-1200x675.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Coding4Kids STEM Courses"  width="1200" height="675" /> 
+		  <div class="carousel-caption">
+			<h3>Synergy Happens Here</h3>
+			<p>We beieve kids learn best when they are having fun among their friends.</p>
+		  </div>   
+		</div>
+		<div class="carousel-item">
+		  <img src="{{url_for('static', filename='images/carousel/c4k_carousel_02-1200x675.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Coding4Kids STEM Courses"  width="1200" height="675" />
+		  <div class="carousel-caption">
+			<h3>Learning Happens Here</h3>
+			<p>We aim to feed the spark of curiosity and encourage their creativity.</p>
+		  </div>   
+		</div>
+		<div class="carousel-item">
+		  <img src="{{url_for('static', filename='images/carousel/c4k_carousel_03-1200x675.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Coding4Kids STEM Courses"  width="1200" height="675" />
+		  <div class="carousel-caption">
+			<h3>Curiousity Happens Here</h3>
+			<p>Watch as young minds are stretched and continue to grow!</p>
+		  </div>   
+		</div>
+		<div class="carousel-item">
+		  <img src="{{url_for('static', filename='images/carousel/c4k_carousel_04-1200x675.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="Coding4Kids STEM Courses"  width="1200" height="675" />
+		  <div class="carousel-caption">
+			<h3>Fun Happens Here</h3>
+			<p>Lifelong Skills and Lasting Memories</p>
+		  </div>   
+		</div>
+	  </div>
+	  <a class="carousel-control-prev" href="#c4k_carousel" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#c4k_carousel" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+
+	
+	
+{% endblock %}

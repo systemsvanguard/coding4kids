@@ -8,7 +8,7 @@ Live **Site Demo** ~ [Coding4Kids](http://www.ryanhunter.org/ "Coding4Kids ~ A p
 ---
 
 ## Steps to Install
-- Live **Site Demo** ~ [Sun Island Tours](http://www.ryanhunter.org/ "Coding4Kids ~ A portfolio web site to display a fictitious computer programming and STEM school for children.")
+- Live **Site Demo** ~ [Coding4Kids](http://www.ryanhunter.org/ "Coding4Kids ~ A portfolio web site to display a fictitious computer programming and STEM school for children.")
 - git clone https://github.com/systemsvanguard/coding4kids.git 
 - cd coding4kids 
 - from within your activated VirtualEnv environment, or any other Python shell, install flask framework using pip
@@ -45,6 +45,16 @@ You'll be editing mainly the files in the lower 'coding4kids' directories.
 
 ![Fictitous portfolio site ~ Coding4Kids ~ Built with Python Flask and Bootstrap 4 CSS](http://ryanhunter.org/images/portfolio/screen_coding4kids.jpg )
 
+
+
+![Fictitous portfolio site ~ Coding4Kids ~ Built with Python Flask and Bootstrap 4 CSS](http://ryanhunter.org/images/portfolio/c4k_quiz.jpg )
+
+
+![Fictitous portfolio site ~ Coding4Kids ~ Built with Python Flask and Bootstrap 4 CSS](http://ryanhunter.org/images/portfolio/c4k_contact.jpg )
+
+
+
+![Fictitous portfolio site ~ Coding4Kids ~ Built with Python Flask and Bootstrap 4 CSS](http://ryanhunter.org/images/portfolio/c4k_volunteer.jpg )
 
 
 

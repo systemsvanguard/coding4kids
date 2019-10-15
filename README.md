@@ -1,14 +1,14 @@
 # coding4kids - Flask Site
 A portfolio web site to display a fictitious computer programming and STEM school for children. Built using Python Flask, JSON, the Bootstrap 4 CSS framework, FontAwesome 5 icons, Google Fonts, JavaScript, CSS, and HTML 5.  Includes a JSON data driven testimonials section, a JSON backed quiz system, and a number of Bootstrap 4 functionalities including an image carousel, and Courses tab UI, and much more.
 
-Live **Site Demo** ~ [Coding4Kids](http://www.ryanhunter.org/ "Coding4Kids ~ A portfolio web site to display a fictitious computer programming and STEM school for children")
+Live **Site Demo** ~ [Coding4Kids](https://coding4kidsonline.herokuapp.com/) "Coding4Kids ~ A portfolio web site to display a fictitious computer programming and STEM school for children")
 
 ![Coding4Kids](http://ryanhunter.org/images/portfolio/screen_coding4kids.jpg)
 
 ---
 
 ## Steps to Install
-- Live **Site Demo** ~ [Coding4Kids](http://www.ryanhunter.org/ "Coding4Kids ~ A portfolio web site to display a fictitious computer programming and STEM school for children.")
+- Live **Site Demo** ~ [Coding4Kids](https://coding4kidsonline.herokuapp.com/) "Coding4Kids ~ A portfolio web site to display a fictitious computer programming and STEM school for children.")
 - git clone https://github.com/systemsvanguard/coding4kids.git 
 - cd coding4kids 
 - from within your activated VirtualEnv environment, or any other Python shell, install flask framework using pip
